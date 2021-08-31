@@ -25,4 +25,4 @@ def download(link, size, root_folder, class_name, resize_method):
     else:
         #Check if another file of the same name already exists
         id = uuid.uuid1()
-        img.save(f"./{root_folder}/{class_name}/{class_name}-{id.hex}.jpg", "JPEG")
+        img.save(f"./{root_folder}/{class_name}/{img_name}.jpg", "JPEG")
