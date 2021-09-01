@@ -1,5 +1,7 @@
 # IDT - Image Dataset Tool
 
+This fork just changes the destination filenames.
+
 ## Version 0.0.6 beta
 
 ![idt-logo](https://user-images.githubusercontent.com/47995046/96403078-d675f080-11ad-11eb-8435-c8ce69a6c871.png)
@@ -22,18 +24,12 @@ I am proud to announce our newest version! 🎉🎉
 
 ## Installing
 
-You can install it via pip or cloning this repository.
-
 ```console
-user@admin:~$ pip3 install idt
-
+user@admin:~$ pip install git+https://github.com/styler00dollar/idt.git
 ```
 
-**OR**
-
-
 ```console
-user@admin:~$ git clone https://github.com/deliton/idt.git && cd idt
+user@admin:~$ git clone https://github.com/styler00dollar/idt.git && cd idt
 user@admin:~/idt$ sudo python3 setup.py install
 
 ```
