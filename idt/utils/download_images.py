@@ -18,8 +18,6 @@ def download(link, size, root_folder, class_name, resize_method):
 
     # Split last part of url to get image name and its extension
     img_name = link.rsplit('/', 1)[1]
-    # "name.jpg" -> "name"
-    img_name = os.path.splitext(img_name)[0]
     img_type = img_name.split('.')[1]
 
     if img_type.lower() != "jpg":
@@ -27,4 +25,4 @@ def download(link, size, root_folder, class_name, resize_method):
     else:
         #Check if another file of the same name already exists
         id = uuid.uuid1()
-        img.save(f"./{root_folder}/{class_name}/{id.hex}_{img_name}.jpg", "JPEG")
+        img.save(f"./{root_folder}/{class_name}/{id.hex}_{os.path.splitext(img_name)[0]}.jpg", "JPEG")
