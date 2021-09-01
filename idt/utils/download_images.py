@@ -18,6 +18,8 @@ def download(link, size, root_folder, class_name, resize_method):
 
     # Split last part of url to get image name and its extension
     img_name = link.rsplit('/', 1)[1]
+    # "name.jpg" -> "name"
+    img_name = os.path.splitext(img_name)[0]
     img_type = img_name.split('.')[1]
 
     if img_type.lower() != "jpg":
